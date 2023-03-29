@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+
+/* Header */
+
+header {
+  width: 100%;
+}
+
+.header__content .header__content--grid {
+  margin-top: 1.5rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 3.5fr;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 4rem);
+  text-align: center;
+  padding-left: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.cover-heading {
+  font-size: 3.8rem;
+}
+
+.cover-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.cover-text {
+  margin: 1.15rem 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background-color: #e7e8e9;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: $theme-color-s;
+  transform: scale(1.07);
+}
+
+#cover-image {
+  width: 80%;
+  transition: 5s ease-in-out;
+}
+
+#cover-image:hover {
+  filter: sepia(25%) contrast(80%) saturate(80%) hue-rotate(320deg);
+}

@@ -1,0 +1,42 @@
+@import "../../../styles.scss";
+
+/* Skills */
+
+.skills {
+  padding: 3rem;
+  background-color: $theme-color-p;
+  min-width: 100%;
+  justify-content: center;
+}
+
+#skills-heading {
+  padding: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: -4.25rem;
+}
+
+.skills__container {
+  border-radius: 4rem;
+  background-color: $theme-color-f;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.skills__grid--col {
+  margin-top: 4rem;
+}
+
+.skills-grid-img {
+  opacity: 65%;
+  transition: 0.3s;
+}
+
+.skills-grid-img:hover {
+  opacity: 100%;
+  transform: scale(1.07);
+}

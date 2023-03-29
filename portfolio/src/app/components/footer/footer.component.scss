@@ -1,0 +1,17 @@
+/* footer */
+
+footer {
+  text-align: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.footer-img {
+  height: 7%;
+  width: 7%;
+  transition: 5s ease-in-out;
+}
+
+.footer-img:hover {
+  filter: sepia(25%) contrast(80%) saturate(80%) hue-rotate(320deg);
+}

@@ -1,0 +1,92 @@
+@import "../../../styles.scss";
+
+/* Projects */
+.projects {
+  padding: 3rem;
+  background-color: $theme-color-t;
+}
+
+#projects-heading {
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 2rem;
+}
+
+.projects__container {
+  border-radius: 4rem;
+  background-color: $theme-color-t;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.projects__grid--col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 2rem;
+  border-top: 0.5rem groove #e7e8e9;
+  margin: 0 6rem;
+}
+
+.projects__grid--col > div > h3 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.projects__grid--col-content {
+  background-color: $theme-color-p;
+  border-radius: 4rem;
+  color: $theme-color-t;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.projects__grid--col-content > h3 {
+  margin-bottom: 1rem;
+}
+
+.projects__img-container {
+  border-radius: 4rem;
+  color: $theme-color-t;
+  font-size: 1.5rem;
+  padding: 2rem;
+  opacity: 50%;
+  transition: 0.3s;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#projects__img-container_img1 {
+  background-image: url(../../assets/eshop.png);
+}
+
+#projects__img-container_img2 {
+  background-image: url(../../assets/fakeos.png);
+}
+
+#projects__img-container_img3 {
+  background-image: url(../../assets/gbooks.png);
+}
+
+#projects__img-container_img4 {
+  background-image: url(../../assets/minesweeper.png);
+}
+
+.projects__img-container:hover {
+  opacity: 100%;
+}
+
+.global-content-grid-social-container {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.global-content-grid-social-container2 {
+  @extend .global-content-grid-social-container;
+}

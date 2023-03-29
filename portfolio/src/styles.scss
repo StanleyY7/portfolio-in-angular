@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$theme-font: "Roboto", sans-serif;
+$theme-color-p: #101820;
+$theme-color-s: #fcf258;
+$theme-color-t: #ffffff;
+$theme-color-f: #e7e8e9;
+
+/* General Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $theme-font;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $theme-color-p;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+em {
+  animation: blinker 2.5s infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.icon {
+  height: 3.5rem;
+  width: 4.5rem;
+  opacity: 55%;
+  transition: 0.3s;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.icon:hover {
+  opacity: 100%;
+}
