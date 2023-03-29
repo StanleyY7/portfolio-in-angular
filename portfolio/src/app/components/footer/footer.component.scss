@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 /* footer */
 
 footer {
@@ -14,4 +16,71 @@ footer {
 
 .footer-img:hover {
   filter: sepia(25%) contrast(80%) saturate(80%) hue-rotate(320deg);
+}
+
+/* media queries */
+
+/* extra small devices like the galaxy fold */
+@media only screen and (max-width: 280px) {
+  /* Footer */
+  .footer-img {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+/* Small Devices */
+
+@media only screen and (min-width: 281px) and (max-width: 340px) {
+  /* Footer */
+  .footer-img {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 415px) {
+  /* Footer */
+  .footer-img {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+/* Medium Devices */
+
+@media only screen and (min-width: 415px) and (max-width: 641px) {
+  /* Footer */
+  .footer-img {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 642px) and (max-width: 769px) {
+  /* Footer */
+
+  .footer-img {
+    height: 20%;
+    width: 20%;
+  }
+}
+
+/* Big Screen Devices */
+
+@media only screen and (min-width: 770px) and (max-width: 890px) {
+  /* Footer */
+  .footer-img {
+    align-items: center;
+    height: 12%;
+    width: 12%;
+  }
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1025px) {
+  /* Footer */
+  .footer-img {
+    height: 12%;
+    width: 12%;
+  }
 }
