@@ -8,14 +8,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-
-import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: '**', component: NotFoundComponent },
-];
 
 @NgModule({
   declarations: [
@@ -26,9 +18,8 @@ const routes: Routes = [
     ProjectsComponent,
     SkillsComponent,
     FooterComponent,
-    NotFoundComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
 })
