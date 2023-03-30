@@ -12,9 +12,9 @@ import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     CoverComponent,
     AboutComponent,
-    NavbarComponent,
     ProjectsComponent,
     SkillsComponent,
     FooterComponent,
