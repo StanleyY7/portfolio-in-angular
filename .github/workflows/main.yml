@@ -11,11 +11,15 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
 
     - name: Install dependencies
       run: |
         cd ./portfolio
         npm install
+
     - name: Run tests
       run: |
         cd ./portfolio
