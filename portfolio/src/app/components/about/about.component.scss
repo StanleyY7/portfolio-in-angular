@@ -65,6 +65,11 @@
   opacity: 100%;
 }
 
+#special-link {
+  background-color: $theme-color-s;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 280px) {
   /* About */
   .article__container {
