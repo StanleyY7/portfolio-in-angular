@@ -91,6 +91,90 @@
   @extend .global-content-grid-social-container;
 }
 
+.fade-left {
+  visibility: hidden;
+  transform: translateX(-225%);
+  animation-name: fade-left;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-right {
+  visibility: hidden;
+  transform: translateX(225%);
+  animation-name: fade-right;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-left-text {
+  opacity: 0;
+  transform: translateX(-225%);
+  animation-name: fade-left-text;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-right-text {
+  opacity: 1;
+  transform: translateX(225%);
+  animation-name: fade-right-text;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-left {
+  from {
+    visibility: hidden;
+    transform: translateX(-225%);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    visibility: hidden;
+    transform: translateX(225%);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-left-text {
+  from {
+    opacity: 0;
+    transform: translateX(-225%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+.visHidden {
+  visibility: hidden;
+}
+
+@keyframes fade-right-text {
+  from {
+    opacity: 0;
+    transform: translateX(225%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* media queries */
 
 /* extra small devices like the galaxy fold */
