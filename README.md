@@ -18,7 +18,7 @@ I chose to refactor my portfolio project as it was a relatively small project wh
 
 - Single Page Application consisting of an About, Projects and Skills section
 - Original functions from vanilla project refactored into Angular "version"/syntax.
-- HamburgerMenu
+- Hamburger Menu
 - Jasmine Tests
 - Deployed on Firebase
 
